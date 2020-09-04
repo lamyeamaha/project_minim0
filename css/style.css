@@ -1,0 +1,274 @@
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Ubuntu', sans-serif*/
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Playfair Display', serif;
+	color:#626262;
+
+}
+/*header start*/
+header{
+	padding: 15px 0;
+}
+
+/*container start*/
+.container{
+	/*border:1px solid purple;*/
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;
+}
+/*container end*/
+/*logo start*/
+.logo{
+	/*border:1px solid red;*/
+	width:13%;
+	float:left;
+	margin-top: 9px;
+}
+.logo img{
+	width:100%;
+}
+/*logo end*/
+/*menu start*/
+.menu{
+	/*border:1px solid red;*/
+	width:65%;
+	float:right;
+}
+.menu ul{
+	float: right;
+    /* To solve the issue of floating ul li to the left,
+    we could either do this "overflow: hidden;" or do
+    "float:right" on ul*/
+}
+.menu ul li{
+	list-style: none;
+    float: left;
+}
+.menu ul li a{
+    color:#626262;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 50px;
+    border-bottom:1px solid transparent ;/*to stop the on and off 
+    effect of the border(comment this to see what happens when you
+    hover over the links)*/
+    transition:.4s;
+}
+.menu ul li:last-child a{
+	margin-right:0;
+}
+.menu ul li a:hover{
+	/*we are going to add an underline
+	for this hover effect.
+	To do this, we have to make few 
+	changes. in ".menu ul li", instead
+	of padding:0 50px, we will use
+	margin:0 50px. use margin in 
+	".menu ul li a:last-child a" too*/
+    border-bottom:1px solid #000000;/*the color is selected 
+    to match with the logo*/
+}
+/*menu end*/
+/*header end*/
+/*banner start*/
+.banner{}
+.b_image{}
+.b_image img{
+	width:100%;
+}
+/*banner end*/
+/*getaway start*/
+.getaway{
+	/*border:1px solid red;*/
+	padding:80px 0;
+}
+.container2{
+	/*border:1px solid red;*/
+	width:80%;
+	margin:0 auto;
+}
+.getaway_content{}
+.sm_heading{
+	font-family:'Ubuntu', sans-serif;
+    font-size:14px;
+    font-weight:;
+	color:#b4ad9e;
+	text-transform:uppercase;
+	margin:0;
+}
+.bg_heading{
+	font-size:30px;
+    font-weight:400;
+    margin: 26px 0 39px 0;
+}
+.common_p{
+	line-height: 26px;
+	word-spacing: 1px;
+	margin: 0 0 50px 0;
+}
+/*getaway end*/
+/*blog start*/
+.blog{
+	padding:80px 0;
+}
+.blog_content{
+	overflow:hidden;
+}
+.single{
+	width:47%;
+	float:left;
+}
+.single:nth-child(even){
+	margin-left:6%;
+}
+.single:nth-child(1){
+	margin-bottom:80px;
+}
+.single:nth-child(2){
+	margin-bottom:80px;
+}
+.single img{
+	width:100%;
+	margin-bottom:25px;
+}
+.mb_remove{
+	margin-bottom:0;/*to remove the margin
+	bottom from single*/
+}
+/*blog end*/
+/*newsletter start*/
+.newsletter{
+	background-color:#f0f0f0;
+    padding:70px 0;
+}
+.container3{
+	/*border:1px solid green;*/
+}
+.nl_content{
+	text-align:center;
+}
+.nl_content h1{
+	font-family:'Playfair Display', serif;
+	font-size:30px;
+	font-weight:400;
+	color:#333333;
+	margin:0 0 50px 0;
+}
+.n_form{
+	/*border:1px solid blue;*/
+	width:400px;
+    position:relative;
+    margin: 0 auto;
+}
+.n_form input{
+	font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+    width: 350px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    padding: 0 45px 0 5px;
+}
+.n_form input:focus{
+    outline:0;
+}
+.n_form button{
+	position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    top: 15px;
+    right: 0px;
+}
+.n_form button:focus{
+	outline:0;
+}
+.n_form button img{}
+
+/*newsletter end*/
+/*load more button start*/
+.load{
+	/*border:1px solid red;*/
+	text-align:center;
+    padding: 30px 0 190px 0;
+}
+.load button{
+    width:170px;
+    height:60px;
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+    color:#626262;
+    background-color:transparent;
+    border: 1px solid #626262;
+    cursor:pointer;
+    transition:.3s;
+
+}
+.load button:hover{
+    background-color:#626262;
+    color:white;
+}
+.load button:focus{
+    outline:0;
+}
+/*load more button end*/
+/*footer start*/
+footer{
+	/*border:1px solid black;*/
+	overflow:hidden;
+	padding:25px 0 25px 0;
+	background-color:#f0f0f0;
+}
+.terms{
+	/*border:1px solid red;*/
+	width:25%;
+	float:left;
+}
+.terms ul{
+	float:left;
+}
+.terms ul li{
+	list-style:none;
+	float:left;
+}
+.terms ul li a{
+	font-family: 'Playfair Display', serif;
+    font-size:14px;
+    color:#000000;
+	text-decoration:none;
+	padding-right:18px;
+}
+.terms ul li:last-child a{
+	padding-right:0;
+}
+.follow{
+	/*border:1px solid purple;*/
+	width:20%;
+	float:right;
+}
+.follow ul{
+	float:right;
+}
+.follow ul li{
+    list-style:none;
+	text-decoration:none;
+	float:left;
+}
+.f_style{
+    font-family: 'Playfair Display', serif;
+    font-size:14px;
+    color:#000000;
+    padding-right:18px;
+}
+.follow ul li img{
+	padding-right:18px;
+}
+.follow ul li:last-child img{
+	padding-right:0;
+}
+/*footer end*/
